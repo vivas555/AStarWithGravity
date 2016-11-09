@@ -28,37 +28,37 @@ using System.Collections.Generic;
 namespace Core
 {
     /// <summary>
-    /// Classe node peuplant la grille elle contient toutes les informations sur l'état, la valeur et la position des nodes
+    /// Classe node peuplant la grille, elle contient toutes les informations sur l'état, la valeur et la position des noeuds
     /// </summary>
     /// <seealso cref="Node" />
     public class Node : IHeapItem<Node>
     {
         /// <summary>
-        /// Si la node est traversable par le seeker
+        /// Si le noeud est traversable par le seeker
         /// </summary>
         public readonly bool IsFlyable;
         /// <summary>
-        /// La position dans l'espace de la node
+        /// La position dans l'espace de le noeud
         /// </summary>
         public Vector2 WorldPosition;
         /// <summary>
-        /// À combien de distance est la node de la node de départ.
+        /// À combien de distance est le noeud de le noeud de départ.
         /// </summary>
         public int GCost;
         /// <summary>
-        /// À quelle distance est la node de la node d'arrivé.
+        /// À quelle distance est le noeud du noeud d'arrivée.
         /// </summary>
         public int HCost;
         /// <summary>
-        /// Sa position en X dans le tableau de node
+        /// Sa position en X dans le tableau de noeud
         /// </summary>
         public readonly int GridPositionX;
         /// <summary>
-        /// Sa position en Y dans le tableau de node
+        /// Sa position en Y dans le tableau de noeud
         /// </summary>
         public readonly int GridPositionY;
         /// <summary>
-        /// Pile représentant les parents(Node par lesquels ont accéde au node courant) du node courant.
+        /// Pile représentant les parents(Noeuds par lesquels on accède au noeud courant) du noeud courant.
         /// </summary>
         public Stack<Node> Parent;
         /// <summary>
@@ -70,30 +70,30 @@ namespace Core
         public int HeapIndex { get; set; }
 
         /// <summary>
-        /// Le nombe de node en sautant qu'on doit traverser pour se rendre au node courant
+        /// Le nombre de noeuds en sautant qu'on doit traverser pour se rendre au noeud courant
         /// </summary>
         public int JumpValue;
         /// <summary>
-        /// Dans quel étant est le seeker quand il setrouve sur le node courant.
+        /// Dans quel état est le seeker quand il setrouve sur le noeud courant.
         /// </summary>
         public SeekerStatus SeekerStatusOnNode;
 
         /// <summary>
-        /// Les valeurs de jumpValue qui ont déjà été utilisé sur le node courant.
+        /// Les valeurs de jumpValue qui ont déjà été utilisées sur le noeud courant.
         /// </summary>
         public ArrayList UsedJumpValues;
         /// <summary>
-        /// LEs autres états dans lesquelles s'est trouvé le seeker dans le node courant.
+        /// Les autres états dans lesquels s'est trouvé le seeker dans le noeud courant.
         /// </summary>
         public ArrayList PassedSeekerStatus;
 
         /// <summary>
         /// Instancie un node
         /// </summary>
-        /// <param name="walkable">Obtient si le node est traversable par le seeker</param>
-        /// <param name="worldposition">La position dans le monde où se trouve le node</param>
-        /// <param name="gridposx">La position en X dans la grille où se trouve le node</param>
-        /// <param name="gridposy">La position en Y dans la grille où se trouve le node</param>
+        /// <param name="walkable">Obtient si le noeud est traversable par le seeker</param>
+        /// <param name="worldposition">La position dans le monde où se trouve le noeud</param>
+        /// <param name="gridposx">La position en X dans la grille où se trouve le noeud</param>
+        /// <param name="gridposy">La position en Y dans la grille où se trouve le noeud</param>
         public Node(bool walkable, Vector2 worldposition, int gridposx, int gridposy)
         {
             IsFlyable = walkable;
@@ -123,10 +123,10 @@ namespace Core
         }
 
         /// <summary>
-        /// Compare deux nodes entre eux.
+        /// Compare deux noeuds entre eux.
         /// </summary>
-        /// <param name="nodeToCompare">L'autre node avec lequel comparé le node courant</param>
-        /// <returns>Retourne 1 si le node courant est plus proche de la node cible. Sinon retourne -1</returns>
+        /// <param name="nodeToCompare">L'autre noeud avec lequel est comparé le noeud courant</param>
+        /// <returns>Retourne 1 si le noeud courant est plus proche de la node cible. Sinon retourne -1</returns>
         public int CompareTo(Node nodeToCompare)
         {
             int compare = fCost.CompareTo(nodeToCompare.fCost);

@@ -24,7 +24,7 @@
 namespace Core
 {
     /// <summary>
-    /// Enum contenant les états possible du seeker
+    /// Enum contenant les états possibles du seeker
     /// </summary>
     public enum SeekerStatus
     {

@@ -24,7 +24,7 @@
 namespace Core
 {
     /// <summary>
-    /// Interface permetant à la librairie d'être utilisé sous Unity et autre engins ou IDE.
+    /// Interface permetant à la librairie d'être utilisée sous Unity et autres engins ou IDE.
     /// </summary>
     public interface IGridGenerator
     {

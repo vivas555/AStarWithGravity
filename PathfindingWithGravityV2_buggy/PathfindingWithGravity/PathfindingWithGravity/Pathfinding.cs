@@ -45,8 +45,8 @@ namespace PathfindingWithGravity
         /// <summary>
         /// Instancie un object logique pathfinding.
         /// </summary>
-        /// <param name="grid">La grille sur laquelle se baser pour trouver le chemin et dans la quel peuplé le chemin</param>
-        /// <param name="maxJumpValue">La valeur de saut maximale que le seeker peut faire en node</param>
+        /// <param name="grid">La grille sur laquelle se baser pour trouver le chemin et dans laquelle peupler ce chemin.</param>
+        /// <param name="maxJumpValue">La valeur de saut maximale que le seeker peut faire en noeud</param>
         /// <param name="targetPosX">La position dans le monde en X de la cible</param>
         /// <param name="targetPosY">La position dans le monde en Y de la cible.</param>
         public Pathfinding(Grid grid, int maxJumpValue, float targetPosX,float targetPosY)

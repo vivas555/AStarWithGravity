@@ -28,7 +28,7 @@ namespace Core
 {
     /// <summary>
     /// Classe qui gère la grille sur laquelle se base le module de pathfinding. 
-    /// Elle contient le layer quiest définit comme unwalkable ainsi que le chemin trouvé
+    /// Elle contient le layer qui est définit comme unwalkable ainsi que le chemin trouvé.
     /// </summary>
     public class Grid
     {
@@ -37,19 +37,19 @@ namespace Core
         /// </summary>
         public Vector2 GridWorldSize;
         /// <summary>
-        /// Le rayon des nodes. Majoritairement le rayon du seeker
+        /// Le rayon des noeuds. Majoritairement le rayon du seeker
         /// </summary>
         public float NodeRadius;
         /// <summary>
-        /// Le tableau de nodes qui forment la grille.
+        /// Le tableau de noeuds qui forment la grille.
         /// </summary>
         public Node[,] grid;
         /// <summary>
-        /// Liste de nodes contenant le chemin trouvé.
+        /// Liste de noeuds contenant le chemin trouvé.
         /// </summary>
         public List<Node> Path;
         /// <summary>
-        /// La position actuel du centre de la grille
+        /// La position actuelle du centre de la grille
         /// </summary>
         public Vector2 CurrentPos;
         private float _nodeDiameter;
@@ -109,7 +109,7 @@ namespace Core
         }
 
         /// <summary>
-        /// Obtient le node qui contient la position dans le monde spécifié.
+        /// Obtient le noeud qui contient la position dans le monde spécifiée.
         /// </summary>
         /// <param name="worldPosition">La position dans le monde pour laquelle on veut connaître la node</param>
         public Node NodeFromWorldPoint(Vector2 worldPosition)
@@ -126,11 +126,11 @@ namespace Core
         }
 
         /// <summary>
-        /// Obtiens tous les nodes voisins dans lesquelles ils est possible de se rendre à partir du node demandé
+        /// Obtient tous les noeuds voisins dans lesquels il est possible de se rendre à partir du node demandé
         /// </summary>
-        /// <param name="node">Le node du quel on veut connaître les nodes voisins</param>
-        /// <param name="maxJumpValue">La valeur de saut maximale en node du seeker</param>
-        /// <returns>Une liste de node contenant les voisins</returns>
+        /// <param name="node">Le noeud duquel on veut connaître les noeuds voisins</param>
+        /// <param name="maxJumpValue">La valeur de saut maximale en noeud du seeker</param>
+        /// <returns>Une liste de noeuds contenant les voisins</returns>
         public List<Node> GetNeighborsWithGravity(Node node, int maxJumpValue)
         {
             List<Node> neighbours = new List<Node>();

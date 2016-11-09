@@ -26,7 +26,7 @@ using System;
 namespace Core
 {
     /// <summary>
-    /// Structure de données qui va toujours retourner l'object ayant la plus petite valeur.
+    /// Structure de données qui va toujours retourner l'objet ayant la plus petite valeur.
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public class Heap<T> where T : IHeapItem<T>
@@ -74,9 +74,9 @@ namespace Core
         }
 
         /// <summary>
-        /// Retourne le premeir élément dans la heap et le supprime
+        /// Retourne le premier élément dans la heap et le supprime.
         /// </summary>
-        /// <returns>LE premier élément dans la heap</returns>
+        /// <returns>Le premier élément dans la heap.</returns>
         public T RemoveFirst()
         {
             T firstItem = _items[0];
@@ -88,7 +88,7 @@ namespace Core
         }
 
         /// <summary>
-        /// Obtiens le nombre d'élément dans la heap
+        /// Obtient le nombre d'élément dans la heap.
         /// </summary>
         /// <value>
         /// Lenombre d'éléments dans la heap
@@ -96,7 +96,7 @@ namespace Core
         public int Count { get; private set; }
 
         /// <summary>
-        /// Mets à jour l'objet spécifié dans la heap.
+        /// Met à jour l'objet spécifié dans la heap.
         /// </summary>
         public void UpdateItem(T item)
         {
@@ -104,11 +104,11 @@ namespace Core
         }
 
         /// <summary>
-        /// Détermine si l'objet spécifié est dans la heap
+        /// Détermine si l'objet spécifié est dans la heap.
         /// </summary>
-        /// <param name="item">L'object spécifié</param>
+        /// <param name="item">L'object spécifié.</param>
         /// <returns>
-        ///   <c>true</c> si la heap contiens l'object spécifié; sinon, <c>false</c>.
+        ///   <c>true</c> Si la heap contient l'object spécifié; sinon, <c>false</c>.
         /// </returns>
         public bool Contains(T item)
         {

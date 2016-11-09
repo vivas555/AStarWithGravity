@@ -25,7 +25,7 @@ using System;
 namespace Core
 {
     /// <summary>
-    /// interface que tous les objects voulant être placé dans la heap doivent implanté.
+    /// Interface que tous les objets voulant être placés dans la heap doivent implanter.
     /// </summary>
     /// <typeparam name="T">Le type d'objet</typeparam>
     /// <seealso cref="System.IComparable{T}" />

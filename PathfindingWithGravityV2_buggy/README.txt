@@ -1,1 +1,3 @@
-Le projet est dans POCPathfinding et les dll sont dans PathfindingWithGravity
+An exemple project is in POCPathfinding. The source code itself is in PathfindingWithGravity. All the work has been done with the collaboration of Anthony Deschênes,Alicia Lamontagne,Phillipe Tremblay and Charles-Alexandre Lafond.
+
+Un exemple de projet est dans POCPathfinding. Le code source est dans PathfindingWithGravity. Tout le travail a été fait en collaboration avec Anthony Deschênes,Alicia Lamontagne,Phillipe Tremblay et Charles-Alexandre Lafond.

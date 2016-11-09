@@ -3,7 +3,7 @@
 
 //Author: Felix Rivard
 
-//Contributors: Anthony Deschnês,Phillipe Tremblay, Alicia Lamontagne and Charles-Alexandre Lafond
+//Contributors: Anthony Deschênes,Phillipe Tremblay, Alicia Lamontagne and Charles-Alexandre Lafond
 
 //Year 2016
 
@@ -34,10 +34,10 @@ namespace UnityConnector
     public class UnityGridGenerator : IGridGenerator
     {
         /// <summary>
-        /// Remplis la grille de nodes.
+        /// Remplit la grille de noeuds.
         /// </summary>
         /// <param name="gridToPopulate">La grille à remplir</param>
-        /// <param name="unwalkableMask">Le layer à concidérer comme intraversable par le seeker</param>
+        /// <param name="unwalkableMask">Le layer à considérer comme intraversable par le seeker</param>
         public Node[,] PopulateGrid(Grid gridToPopulate, int unwalkableMask)
         {
             Vector2 worldBottomLeft = new Vector2();

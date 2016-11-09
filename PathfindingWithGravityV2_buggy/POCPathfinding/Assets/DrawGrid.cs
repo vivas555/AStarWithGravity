@@ -28,7 +28,7 @@ namespace Assets
         private Grid _grid;
         private Pathfinding _pathfinding;
 
-     private  void Start()
+        private  void Start()
         {
             UnityGridGenerator gridGenerator = new UnityGridGenerator();
 
